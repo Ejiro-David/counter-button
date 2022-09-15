@@ -1,3 +1,6 @@
 All 10 reactHooks must be used in building this app. 
 if you can't find funtion for a hook in the first version, 
 build a second version of the counter with updates including new hooks
+
+
+add dark mode toggle button
