@@ -4,3 +4,12 @@ build a second version of the counter with updates including new hooks
 
 
 add dark mode toggle button
+
+Hooks 
+- useState
+- useEffect
+- useMemo
+- useContext
+- useCallbackfn
+- useReducer
+- useRef
