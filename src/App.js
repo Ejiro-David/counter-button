@@ -1,9 +1,18 @@
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      Beautiful Counter for Practicing Hook Funtionalities.
+      <div className="counter1">
+        <div className="display"></div>
+        <button className="incr"></button>
+        <button className="decr"></button>
+      </div>
+      <div className="counter2">
+        <div className="display"></div>
+        <button className="incr"></button>
+        <button className="decr"></button>
+      </div>
     </div>
   );
 }
