@@ -1,35 +1,60 @@
 import { useState } from "react";
 import "./App.css";
-// import down from '../src/icons/down.png' use icons 
+// import down from '../src/icons/down.png' use icons
 
-const Counter1 = ({display}) => {
+const Counter1 = () => {
+  const [display, setDisplay] = useState(0);
+
+  const handleIncr = () => {
+    setDisplay(display + 1);
+  };
+
+  const handleDecr = () => {
+    setDisplay(display - 1);
+  };
+  console.log("k1");
   return (
     <div className="counter1">
-        <div className="display">{display}</div>
-        <button className="incr">+</button>
-        <button className="decr">-</button>
-      </div>
-  )
-}
+      <div className="display">{display}</div>
+      <button className="incr" onClick={handleIncr}>
+        +
+      </button>
+      <button className="decr" onClick={handleDecr}>
+        -
+      </button>
+    </div>
+  );
+};
 
-const Counter2 = ({display}) => {
+const Counter2 = () => {
+  const [display, setDisplay] = useState(0);
+
+  const handleIncr = () => {
+    setDisplay(display + 1);
+  };
+
+  const handleDecr = () => {
+    setDisplay(display - 1);
+  };
+  console.log("k2");
   return (
     <div className="counter2">
-        <div className="display">{display}</div>
-        <button className="incr">+</button>
-        <button className="decr">-</button>
-      </div>
-  )
-}
+      <div className="display">{display}</div>
+      <button className="incr" onClick={handleIncr}>
+        +
+      </button>
+      <button className="decr" onClick={handleDecr}>
+        -
+      </button>
+    </div>
+  );
+};
 
 function App() {
-  const [firstDisplay, setFirstDisplay] = useState(0);
-  const [secondDisplay, setSecondDisplay] = useState(0);
-  
   return (
     <div className="App">
-      <Counter1 display={firstDisplay}/>
-      <Counter2 display={secondDisplay}/>
+      <Counter1 />
+      <Counter2 />
     </div>
   );
 }
