@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./App.css";
+import { ContextProvider } from "./context";
 // import down from '../src/icons/down.png' use icons
+
+
 
 const Counter1 = () => {
   const [display, setDisplay] = useState(0);
@@ -12,7 +15,7 @@ const Counter1 = () => {
   const handleDecr = () => {
     setDisplay(display - 1);
   };
-  console.log("k1");
+
   return (
     <div className="counter1">
       <div className="display">{display}</div>
@@ -36,7 +39,7 @@ const Counter2 = () => {
   const handleDecr = () => {
     setDisplay(display - 1);
   };
-  console.log("k2");
+
   return (
     <div className="counter2">
       <div className="display">{display}</div>
@@ -51,11 +54,16 @@ const Counter2 = () => {
 };
 
 function App() {
+  const darkMode = useContext(ContextProvider);
+  console.log(darkMode)
+
   return (
-    <div className="App">
-      <Counter1 />
-      <Counter2 />
-    </div>
+      <div className="App">
+      <button className="darkmode" onClick={'c'}>dark--light</button>
+        <Counter1 />
+        <Counter2 />
+      </div>
+
   );
 }
 

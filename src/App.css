@@ -55,6 +55,13 @@ button:hover{
   scale: 1.1;
   box-shadow: 5px 6px 5px 2px rgba(0,0,0,0.69);
 }
+.darkmode{
+  font-size: 10px;
+  width: fit-content;
+  background-color: aliceblue;
+  color: aliceblue;
+}
+
 /* img{
   width: 10px;
 } */
